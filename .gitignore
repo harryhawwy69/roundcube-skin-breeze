@@ -3,3 +3,4 @@ config/des_key.inc.php
 __pycache__/
 *.pyc
 .claude/
+promo/
