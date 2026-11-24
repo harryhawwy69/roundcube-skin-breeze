@@ -23,6 +23,23 @@
 
 ---
 
+## 📦 Install into an existing Roundcube (1.6)
+
+If you already run Roundcube 1.6 without Docker:
+
+1. From the release zip, copy `breeze/skins/breeze` to `<roundcube>/skins/breeze` and `breeze/plugins/tw_folders` to `<roundcube>/plugins/tw_folders`.
+2. In `config/config.inc.php` (or `config/custom.inc.php`):
+
+   ```php
+   $config['skin'] = 'breeze';
+   $config['plugins'][] = 'tw_folders';
+   // The skin formats dates itself.
+   $config['prettydate'] = false;
+   ```
+
+3. Clear `<roundcube>/temp` and reload. The folder icon/color dialog, rules and the contacts panel come from `tw_folders`; without it the skin still renders, but those actions are missing.
+4. Language follows the user's Roundcube setting. English and Russian ship in `plugins/tw_folders/localization`; copy `en_US.inc` for another locale.
+
 ## ✨ Features
 
 | | | |
