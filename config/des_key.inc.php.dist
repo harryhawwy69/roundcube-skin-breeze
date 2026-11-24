@@ -1,0 +1,4 @@
+<?php
+// Copy to des_key.inc.php and put 24 random characters here, e.g. from: openssl rand -base64 18
+// Roundcube encrypts sessions and ident_switch passwords with it. Keep the real file private.
+$config['des_key'] = 'change-me-24-characters!';

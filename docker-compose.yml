@@ -1,0 +1,36 @@
+services:
+  roundcube:
+    image: roundcube/roundcubemail:1.6.11-apache
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8090:80"
+    environment:
+      # Timeweb mail; SMTP auth uses the login's address and password (Roundcube defaults %u / %p)
+      ROUNDCUBEMAIL_DEFAULT_HOST: ssl://imap.timeweb.ru
+      ROUNDCUBEMAIL_DEFAULT_PORT: 993
+      ROUNDCUBEMAIL_SMTP_SERVER: ssl://smtp.timeweb.ru
+      ROUNDCUBEMAIL_SMTP_PORT: 465
+      ROUNDCUBEMAIL_DB_TYPE: sqlite
+      ROUNDCUBEMAIL_PLUGINS: archive,markasjunk,zipdownload,newmail_notifier,ident_switch,tw_folders
+      # several mail accounts in one session: Settings > Identities > account mode "Separate account"
+      ROUNDCUBEMAIL_COMPOSER_PLUGINS: gecka/ident-switch:5.0.5
+    volumes:
+      - ./config:/var/roundcube/config:ro
+      - ./skins/breeze:/var/www/html/skins/breeze:ro
+      - ./plugins/tw_folders:/var/www/html/plugins/tw_folders:ro
+      - ./plugin-config/ident_switch.inc.php:/var/www/html/config/ident_switch.inc.php:ro
+      - rc_db:/var/roundcube/db
+
+  # Local test mail server (any login/password, mail in memory only). Not started by default:
+  #   docker compose --profile test up -d greenmail
+  # and point the ROUNDCUBEMAIL_* hosts above back to greenmail:3143 / greenmail:3025.
+  greenmail:
+    image: greenmail/standalone:2.1.2
+    profiles: [test]
+    environment:
+      GREENMAIL_OPTS: -Dgreenmail.setup.test.all -Dgreenmail.hostname=0.0.0.0 -Dgreenmail.auth.disabled
+    ports:
+      - "127.0.0.1:3025:3025"
+
+volumes:
+  rc_db:

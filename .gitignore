@@ -1,0 +1,5 @@
+# secret session/password encryption key: make your own from config/des_key.inc.php.dist
+config/des_key.inc.php
+__pycache__/
+*.pyc
+.claude/
