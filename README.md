@@ -15,7 +15,7 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Mobile](https://img.shields.io/badge/Mobile_ready-0F172A?style=flat-square&logo=android&logoColor=white)
 
-🇷🇺 Русский · [🇬🇧 English](README.md)
+🇷🇺 Русский · [🇬🇧 English](README.en.md)
 
 <img src="docs/demo.gif" alt="Breeze: список, выделение, чтение и новое письмо" width="900">
 

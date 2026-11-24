@@ -15,7 +15,7 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Mobile](https://img.shields.io/badge/Mobile_ready-0F172A?style=flat-square&logo=android&logoColor=white)
 
-[🇷🇺 Русский](README.ru.md) · 🇬🇧 English
+[🇷🇺 Русский](README.md) · 🇬🇧 English
 
 <img src="docs/demo.gif" alt="Breeze demo: message list, selection, reading and compose" width="900">
 
