@@ -121,6 +121,5 @@ Issues и pull requests приветствуются: баги, переводы
 ## 📄 Лицензия
 
 [GPL-3.0](LICENSE), как и Roundcube. Иконки сделаны по путям [Lucide](https://lucide.dev) (ISC).
-Раскладка вдохновлена интерфейсом Timeweb Mail.
 
 <div align="center"><sub>Сделано с ☕ и Roundcube</sub></div>
