@@ -17,7 +17,7 @@
 
 [🇷🇺 Русский](README.md) · 🇬🇧 English
 
-<img src="docs/demo.gif" alt="Breeze demo: message list, selection, reading and compose" width="900">
+<img src="docs/demo-en.gif" alt="Breeze demo: message list, selection, reading and compose" width="900">
 
 </div>
 
