@@ -127,7 +127,7 @@ plugins/tw_folders/      плагин скина: иконки и цвета п�
                          контакты из писем, локализация (ru_RU, en_US)
 config/custom.inc.php    язык, скин, папки, формат дат
 plugin-config/           серверы для дополнительных аккаунтов ident_switch
-docker-compose.yml       Roundcube 1.6.11 + тестовый GreenMail (профиль test)
+docker-compose.yml       Roundcube 1.7.7 + тестовый GreenMail (профиль test)
 ```
 
 - Скин наследует **Elastic** только ради его скриптов: всплывающих меню, диалогов и переключения панелей на телефоне. Внешний вид полностью свой.

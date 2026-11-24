@@ -1,6 +1,6 @@
 services:
   roundcube:
-    image: roundcube/roundcubemail:1.6.11-apache
+    image: roundcube/roundcubemail:1.7.7-apache
     restart: unless-stopped
     ports:
       - "127.0.0.1:8090:80"

@@ -132,7 +132,7 @@ plugins/tw_folders/      companion plugin: folder icons and colors, rules, attac
                          contacts from mail, localization (ru_RU, en_US)
 config/custom.inc.php    language, skin, folders, date format
 plugin-config/           servers for extra ident_switch accounts
-docker-compose.yml       Roundcube 1.6.11 + GreenMail test server (profile "test")
+docker-compose.yml       Roundcube 1.7.7 + GreenMail test server (profile "test")
 ```
 
 - The skin extends **Elastic** only for its scripts: popups, dialogs and phone panel switching. The look is entirely its own.
