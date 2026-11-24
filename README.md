@@ -23,6 +23,25 @@
 
 ---
 
+## 📦 Установка в готовый Roundcube (1.6)
+
+Через Composer, из папки Roundcube (поставит скин и плагин `tw_folders`):
+
+```bash
+composer require qdpops/breeze
+```
+
+Или вручную: из архива релиза скопируйте `skins/breeze` и `plugins/tw_folders` в те же папки Roundcube. Затем в `config/config.inc.php`:
+
+```php
+$config['skin'] = 'breeze';
+$config['plugins'][] = 'tw_folders';
+// Скин сам форматирует даты.
+$config['prettydate'] = false;
+```
+
+Очистите `<roundcube>/temp` и обновите страницу.
+
 ## ✨ Возможности
 
 | | | |

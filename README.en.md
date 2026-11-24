@@ -25,7 +25,13 @@
 
 ## 📦 Install into an existing Roundcube (1.6)
 
-If you already run Roundcube 1.6 without Docker:
+With Composer, from the Roundcube folder (installs the skin and the `tw_folders` plugin):
+
+```bash
+composer require qdpops/breeze
+```
+
+Then do step 2 below. Or by hand, if you already run Roundcube 1.6 without Docker:
 
 1. From the release zip, copy `breeze/skins/breeze` to `<roundcube>/skins/breeze` and `breeze/plugins/tw_folders` to `<roundcube>/plugins/tw_folders`.
 2. In `config/config.inc.php` (or `config/custom.inc.php`):
