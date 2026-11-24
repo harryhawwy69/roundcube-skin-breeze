@@ -122,6 +122,6 @@ Issues and pull requests are welcome: bugs, translations, new languages, a dark 
 ## 📄 License
 
 [GPL-3.0](LICENSE), same as Roundcube. Icons use [Lucide](https://lucide.dev) paths (ISC).
-The layout is inspired by Timeweb Mail. This project is not affiliated with Timeweb or Roundcube.
+The layout is inspired by Timeweb Mail.
 
 <div align="center"><sub>Made with ☕ and Roundcube</sub></div>
