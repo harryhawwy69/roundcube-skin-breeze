@@ -8,7 +8,7 @@
 [![Stars](https://img.shields.io/github/stars/qdpops/roundcube-skin-breeze?style=for-the-badge&color=F59E0B)](https://github.com/qdpops/roundcube-skin-breeze/stargazers)
 [![License](https://img.shields.io/badge/license-GPLv3-22C55E?style=for-the-badge)](LICENSE)
 
-![Roundcube](https://img.shields.io/badge/Roundcube_1.6-37BEFF?style=flat-square&logo=roundcube&logoColor=white)
+![Roundcube](https://img.shields.io/badge/Roundcube_1.6_|_1.7-37BEFF?style=flat-square&logo=roundcube&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP_8-777BB4?style=flat-square&logo=php&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![CSS](https://img.shields.io/badge/CSS-663399?style=flat-square&logo=css&logoColor=white)
@@ -23,7 +23,7 @@
 
 ---
 
-## 📦 Install into an existing Roundcube (1.6)
+## 📦 Install into an existing Roundcube (1.6 or 1.7)
 
 With Composer, from the Roundcube folder (installs the skin and the `tw_folders` plugin):
 
@@ -31,7 +31,7 @@ With Composer, from the Roundcube folder (installs the skin and the `tw_folders`
 composer require qdpops/breeze
 ```
 
-Then do step 2 below. Or by hand, if you already run Roundcube 1.6 without Docker:
+Then do step 2 below. Or by hand, if you already run Roundcube 1.6 or 1.7 without Docker:
 
 1. From the release zip, copy `breeze/skins/breeze` to `<roundcube>/skins/breeze` and `breeze/plugins/tw_folders` to `<roundcube>/plugins/tw_folders`.
 2. In `config/config.inc.php` (or `config/custom.inc.php`):
@@ -141,7 +141,7 @@ docker-compose.yml       Roundcube 1.6.11 + GreenMail test server (profile "test
 
 ## 🛠️ Compatibility
 
-- Roundcube **1.6.x** (tested on 1.6.11), PHP 8, SQLite, MySQL or PostgreSQL.
+- Roundcube **1.6.x and 1.7.x** (tested on 1.6.11 and 1.7.7), PHP 8, SQLite, MySQL or PostgreSQL.
 - Plugins used with the Docker image: `archive`, `markasjunk`, `zipdownload`, `newmail_notifier`, `ident_switch`.
 - No dark mode yet.
 

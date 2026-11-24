@@ -8,7 +8,7 @@
 [![Stars](https://img.shields.io/github/stars/qdpops/roundcube-skin-breeze?style=for-the-badge&color=F59E0B)](https://github.com/qdpops/roundcube-skin-breeze/stargazers)
 [![License](https://img.shields.io/badge/license-GPLv3-22C55E?style=for-the-badge)](LICENSE)
 
-![Roundcube](https://img.shields.io/badge/Roundcube_1.6-37BEFF?style=flat-square&logo=roundcube&logoColor=white)
+![Roundcube](https://img.shields.io/badge/Roundcube_1.6_|_1.7-37BEFF?style=flat-square&logo=roundcube&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP_8-777BB4?style=flat-square&logo=php&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![CSS](https://img.shields.io/badge/CSS-663399?style=flat-square&logo=css&logoColor=white)
@@ -23,7 +23,7 @@
 
 ---
 
-## 📦 Установка в готовый Roundcube (1.6)
+## 📦 Установка в готовый Roundcube (1.6 или 1.7)
 
 Через Composer, из папки Roundcube (поставит скин и плагин `tw_folders`):
 
@@ -136,7 +136,7 @@ docker-compose.yml       Roundcube 1.6.11 + тестовый GreenMail (проф
 
 ## 🛠️ Совместимость
 
-- Roundcube **1.6.x** (проверено на 1.6.11), PHP 8, SQLite, MySQL или PostgreSQL.
+- Roundcube **1.6.x и 1.7.x** (проверено на 1.6.11 и 1.7.7), PHP 8, SQLite, MySQL или PostgreSQL.
 - Плагины в комплекте Docker-образа: `archive`, `markasjunk`, `zipdownload`, `newmail_notifier`, `ident_switch`.
 - Тёмной темы пока нет.
 
